@@ -1,0 +1,12 @@
+### List notification
+GET {{host}}/notifications
+
+### Create notification
+POST {{host}}/notifications
+Content-Type: application/json
+
+{
+  "recipientId": "{{$random.uuid}}",
+  "content": "{{$random.alphabetic()}}",
+  "category": "social"
+}
