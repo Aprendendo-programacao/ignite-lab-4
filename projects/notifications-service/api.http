@@ -7,6 +7,6 @@ Content-Type: application/json
 
 {
   "recipientId": "{{$random.uuid}}",
-  "content": "{{$random.alphabetic()}}",
+  "content": "{{$random.alphanumeric()}}",
   "category": "social"
 }
