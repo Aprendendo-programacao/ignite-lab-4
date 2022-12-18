@@ -14,10 +14,25 @@
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
+    "resolveJsonModule": true,
     "strictPropertyInitialization": false,
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@application/*": [
+        "./src/application/*"
+      ],
+      "@helper/*": [
+        "./src/helper/*"
+      ],
+      "@infra/*": [
+        "./src/infra/*"
+      ],
+      "@test/*": [
+        "./test/*"
+      ]
+    }
   }
 }
